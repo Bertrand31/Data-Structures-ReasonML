@@ -1,0 +1,44 @@
+Arguments: 
+  /Users/bertrandjunqua/.nvm/versions/node/v8.4.0/bin/node /Users/bertrandjunqua/.yarn/bin/yarn.js
+
+PATH: 
+  /Users/bertrandjunqua/.opam/4.02.3/bin:/Users/bertrandjunqua/.yarn/bin:/Users/bertrandjunqua/.config/yarn/global/node_modules/.bin:/Users/bertrandjunqua/.nvm/versions/node/v8.4.0/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:53:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:95:26)
+
+npm manifest: 
+  {
+    "name": "reason-data-structure",
+    "version": "0.1.0",
+    "scripts": {
+      "build": "bsb -make-world",
+      "start": "bsb -make-world -w",
+      "clean": "bsb -clean-world"
+    },
+    "keywords": [
+      "BuckleScript"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+      "bs-platform": "^2.2.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
