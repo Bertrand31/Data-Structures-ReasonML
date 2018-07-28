@@ -40,7 +40,7 @@ let rec toArray = (tree: option(treeNode)): list(int) => {
   };
 };
 
-let rec overrideRoot = (tree: treeNode): option(treeNode) => {
+let overrideRoot = (tree: treeNode): option(treeNode) => {
   switch(tree.left) {
   | Some(node) => Some({ value: node.value, left: node.left, right: tree.right })
   | None => switch(tree.right) {
