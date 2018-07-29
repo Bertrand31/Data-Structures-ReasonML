@@ -1,24 +1,3 @@
-module StrUtils = {
-  open String;
-  let head = (str: string): char => get(str, 0);
-  let tail = (str: string): string => sub(str, 1, length(str) - 1);
-  let of_char = String.make(1);
-  let rec toArr = (str: string): list(char) => {
-    switch(length(str)) {
-    | 0 => []
-    | 1 => [head(str)]
-    | _ => [head(str), ...toArr(tail(str))]
-    };
-  };
-};
-
-module HashtblUtils = {
-  open Hashtbl;
-  let keys = (hashtbl: t('a, 'b)): list('a) => {
-    fold((k, _, acc) => [k, ...acc], hashtbl, []);
-  };
-};
-
 module type Trie = {
   type node = {
     isWord: bool,
